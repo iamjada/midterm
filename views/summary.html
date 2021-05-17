@@ -14,13 +14,10 @@
 <body>
 <div class="container">
     <h1>Midterm Survey</h1>
-    <p>THank you for taking the survey, {{@SESSION.name}}</p>
-    <br>
+    <h2>Thank you for taking the survey, {{@SESSION.name}}!</h2>
     <br>
     <h1>Your answers:</h1>
-    <br>
-    <p></p>
-
+        <check if="{{ isset(@SESSION.choices) }}">{{ @SESSION.choices }}</check>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
