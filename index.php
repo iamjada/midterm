@@ -22,6 +22,13 @@ $f3->route('GET /', function(){
     $view = new Template(); // instantiate view object
     echo $view->render('views/survey.html'); // using view object to display the view page
 
+});
+
+$f3->route('GET /short-survey', function(){
+
+    // Display the short-survey page
+    $view = new Template();
+    echo $view->render('views/short-survey.html');
 
 });
 
